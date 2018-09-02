@@ -2,12 +2,10 @@ import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     CounterComponent
   ],
   imports: [
