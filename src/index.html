@@ -1,14 +1,23 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>NgElementsTest</title>
+  <title>AngularElementsDemo</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+  <my-counter counter="50"></my-counter>
+  <script>
+    const counterElement = document.querySelector('my-counter');
+    counterElement.addEventListener('counterChange', (event) => {
+      console.log(`Custom Element的事件值：${event.detail}`);
+    });
+  </script>
 </body>
+
 </html>
