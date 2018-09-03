@@ -3,7 +3,7 @@ import { CounterService } from '../counter.service';
 
 @Component({
   selector: 'app-counter',
-  template: '{{ counterService.counter }}<button (click)="add()">+</button>',
+  templateUrl: './counter.component.html',
   styles: [],
   providers:[CounterService]
 })

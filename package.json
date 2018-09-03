@@ -8,7 +8,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "ng build --prod --output-hashing=none",
-"package": "cat ./dist/ng-elements-test/{runtime,polyfills,scripts,main}.js > my-counter.js"
+"package": "rm my-counter.js; cat ./dist/ng-elements-test/{runtime,polyfills,scripts,main}.js > my-counter.js"
 
   },
   "private": true,
